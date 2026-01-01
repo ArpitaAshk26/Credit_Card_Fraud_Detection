@@ -6,6 +6,8 @@ This project focuses on identifying fraudulent credit card transactions using a 
 The goal was to build a robust predictive model that can accurately distinguish between legitimate and fraudulent activities, minimizing false negatives to ensure security while maintaining a high precision to avoid customer inconvenience.
 
  #Description of Dataset
+
+ 
 The dataset contains transactions that occurred over two days. Due to confidentiality reasons, the original features were transformed using Principal Component Analysis (PCA).
 
 Features V1-V28: Principal components obtained via PCA.
@@ -17,6 +19,8 @@ Amount: Transaction amount, which could potentially be used for cost-sensitive l
 Class: The target variable (1 for fraud, 0 for legitimate).
 
 #Technical Workflow
+
+
 The notebook follows a standard data science pipeline:
 
 1. Data Exploration & Cleaning
@@ -41,6 +45,7 @@ LightGBM: Utilized for its efficiency and high performance with large datasets.
 CatBoost: Tested to see how it handled the numerical features compared to LightGBM.
 
 #Key Results
+
 Random Forest: Achieved a best validation AUC score of 0.984 and a test AUC of 0.974.
 
 LightGBM: Performance remained strong with a validation AUC of 0.974 and a test set score of 0.946.
@@ -48,4 +53,6 @@ LightGBM: Performance remained strong with a validation AUC of 0.974 and a test 
 Cross-Validation: Using 5-fold cross-validation, the model stability was confirmed with a test prediction AUC of 0.93.
 
 #Conclusion
+
+
 The experiments demonstrate that ensemble methods like Random Forest and LightGBM are highly effective at detecting fraud even in highly skewed datasets. While the models achieved high AUC scores, further tuning for precision-recall balance is recommended for actual production deployment to ensure a seamless user experience for cardholders.

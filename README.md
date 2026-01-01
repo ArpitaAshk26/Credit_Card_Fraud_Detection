@@ -1,5 +1,6 @@
 # Credit_Card_Fraud_Detection
 #Project Overview
+
 This project focuses on identifying fraudulent credit card transactions using a dataset of European cardholders from September 2013. The primary challenge of this project is the extreme class imbalance: out of 284,807 transactions, only 492 are fraudulent (0.172%).
 
 The goal was to build a robust predictive model that can accurately distinguish between legitimate and fraudulent activities, minimizing false negatives to ensure security while maintaining a high precision to avoid customer inconvenience.
